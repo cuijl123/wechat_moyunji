@@ -15,16 +15,16 @@
 点赞记录
 
 截图：
-![image](https://github.com/cuijl123/wechat_moyunji/screenShots/64deb6f9de9125778db7b2cb1260ca5.jpg)
-![image](https://github.com/cuijl123/wechat_moyunji/screenShots/6080f3869518f6f36ccc7d3233de183.jpg)
-![image](https://github.com/cuijl123/wechat_moyunji/screenShots/135ace0e24440dc72dbb683b972c43d.jpg)
-![image](https://github.com/cuijl123/wechat_moyunji/screenShots/72c3bed9b2de1e1111b9c177806af75.jpg)
+![image](https://github.com/cuijl123/wechat_moyunji/blob/master/screenShots/64deb6f9de9125778db7b2cb1260ca5.jpg)
+![image](https://github.com/cuijl123/wechat_moyunji/blob/master/screenShots/6080f3869518f6f36ccc7d3233de183.jpg)
+![image](https://github.com/cuijl123/wechat_moyunji/blob/master/screenShots/135ace0e24440dc72dbb683b972c43d.jpg)
+![image](https://github.com/cuijl123/wechat_moyunji/blob/master/screenShots/72c3bed9b2de1e1111b9c177806af75.jpg)
 
 源码地址：https://github.com/cuijl123/wechat_moyunji.git
 
 小程序名称:墨云记
 
 小程序码:
-![image](https://github.com/cuijl123/wechat_moyunji/screenShots/moyunji.jpg)
+![image](https://github.com/cuijl123/wechat_moyunji/blob/master/screenShots/moyunji.jpg)
 
 大佬们扫一眼就行，免费提供的云环境顶不住
