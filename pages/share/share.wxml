@@ -1,0 +1,7 @@
+<!--pages/share/share.wxml-->
+<import src='/pages/template/template' />
+<block wx:for="{{datas}}" wx:key="{{index}}">
+	<view data-id="{{index}}" catchtap="itemClick" class="noteItem">
+		<template is="noteListTemplate" data="{{...item}}"></template>
+	</view>
+</block>

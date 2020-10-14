@@ -1,0 +1,15 @@
+<!--pages/rank/rank.wxml-->
+<import src='/pages/template/template' />
+<view class="allsaysPage">
+	<scroll-view scroll-y refresher-enabled refresher-triggered="{{state}}" bindrefresherrefresh="pullDownRefresh" bindscrolltolower="lower">
+		<block wx:for="{{datas}}" wx:key="{{index}}">
+			<view data-id="{{index}}" catchtap="itemClick" class="noteItem">
+				<template is="noteListTemplate" data="{{...item}}"></template>
+			</view>
+		</block>
+		<view class="loadMore" hidden="{{isHidenLoadMore}}">
+			<view class="weui-loading"></view>
+			<text>加载中</text>
+		</view>
+	</scroll-view>
+</view>

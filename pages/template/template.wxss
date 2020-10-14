@@ -1,0 +1,110 @@
+/* pages/template/template.wxss */
+.noteList{
+  padding: 15rpx 20rpx;
+  background-color: white
+}
+.userInfo{
+  position: relative;
+  height: 120rpx;
+}
+.userPic{
+   width: 80rpx;
+  height: 80rpx;
+  margin: 20rpx auto;
+  border-radius: 50%;
+ 
+}
+.userName{
+  position: absolute;
+  font-size: 34rpx;
+  left:90rpx;
+  top:25rpx;
+}
+.noteContent{
+  font-family:FangSong;
+  margin: 10rpx 20rpx;
+}
+.createTime{
+  position: absolute;
+  font-size: 24rpx;
+  left:90rpx;
+  top:70rpx;
+}
+
+.noteBottom{
+  position: relative;
+  height: 80rpx;
+  background-color: white;
+  border-top: 1rpx solid rgb(235, 235, 235);
+}
+.noteBottom image{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50rpx;
+  height: 50rpx;
+
+}
+.noteBottom image:nth-child(1){
+   left:50rpx;
+}
+.noteBottom image:nth-child(2){
+  right:80rpx;
+}
+.noteBottom text:nth-child(3){
+  position: absolute;
+  top: 50%;
+  right: 10rpx;
+  transform: translateY(-50%);
+  width: 70rpx;
+  height: 50rpx;
+
+}
+.praiseNum{
+  font-size:34rpx ;
+  margin-left: 15rpx;
+  padding-top: 10rpx;
+}
+.transmit_btn{
+  position: absolute;
+  left:50rpx;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30rpx !important;
+  height: 50rpx;
+  border: none !important;
+
+}
+
+.position1{
+  display: inline-block;
+  /* border: 1px solid rgb(223, 220, 220); */
+  height: 40rpx;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+  background-color: rgb(243, 241, 241); 
+}
+.position1::after{
+  content:"";
+  width: 0;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.position1 image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-bottom: 10rpx;
+}
+.position1 text{
+  vertical-align: middle;
+font-size: 28rpx;
+color: rgb(97, 154, 230);
+margin: 0 10rpx;
+display: inline-block;
+margin-bottom: 30rpx;
+max-width: 200rpx;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}

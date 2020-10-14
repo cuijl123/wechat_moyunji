@@ -1,0 +1,140 @@
+/* pages/allsays/allsays.wxss */
+@import '/pages/template/template.wxss';
+
+page {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(247, 247, 247);
+}
+
+.allsaysPage {
+  height: 100%;
+}
+
+.allsaysPage>view {
+  margin-bottom: 12rpx;
+}
+
+.addSays {
+  position: fixed;
+  top: 0rpx;
+  right: 0rpx;
+  height: 80rpx;
+  width: 80rpx;
+  background-color: white;
+
+}
+.hiddenSays{
+  display: none;
+}
+
+.addSays image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.addSays-hover {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.noteItem {
+  margin-bottom: 30rpx;
+}
+
+
+
+.title {
+  width: calc(100% - 80rpx);
+  height: 80rpx;
+  background: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.title1 {
+  height: 80rpx;
+  background: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.title-sel {
+  color: #24272c;
+  font-size: 32rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-sel .line-style {
+  background: #fff;
+  height: 6rpx;
+  width: 40rpx;
+  position: relative;
+  margin-top: 10rpx;
+}
+
+.title-sel-selected {
+  color: #006bff;
+  font-size: 32rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-sel-selected .line-style {
+  background: #006bff;
+  height: 6rpx;
+  width: 90rpx;
+  position: relative;
+  margin-top: 10rpx;
+}
+
+scroll-view {
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: calc(100% - 90rpx);
+  flex: 1;
+  overflow: scroll;
+  margin: 0 auto;
+}
+
+.record-item {
+  margin-top: 10rpx;
+  background-color: white;
+  padding-bottom: 5rpx;
+  padding-top: 5rpx;
+  font-size: 30rpx;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #eee;
+  padding: 2vh;
+  border-radius: 10rpx
+}
+
+
+.loadMore {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20rpx;
+}
+
+.loadMore>text {
+  font-size: 32rpx;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+  color: transparent;
+}

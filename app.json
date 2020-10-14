@@ -1,0 +1,51 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/index/index",
+    "pages/addSays/addSays",
+    "pages/allsays/allsays",
+    "pages/mysays/mysays",
+    "pages/logs/logs",
+    "pages/myPublish/myPublish",
+    "pages/myPraise/myPraise",
+    "pages/rank/rank",
+    "pages/share/share"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "墨云记",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/allsays/allsays",
+        "text": "发现",
+        "iconPath": "/images/find.png",
+        "selectedIconPath": "/images/find1.png"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "text": "排行榜",
+        "iconPath": "/images/rank.png",
+        "selectedIconPath": "/images/rank1.png"
+      },
+      {
+        "pagePath": "pages/mysays/mysays",
+        "text": "我",
+        "iconPath": "/images/mysays_tab.png",
+        "selectedIconPath": "/images/mysays_tab1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

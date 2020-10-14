@@ -1,0 +1,28 @@
+<!--pages/myPublish/myPublish.wxml-->
+<view class="allsaysPage">
+	<scroll-view scroll-y refresher-enabled refresher-triggered="{{state}}" bindrefresherrefresh="pullDownRefresh" bindscrolltolower="lower">
+		<block wx:for="{{datas}}" wx:key="{{index}}">
+			<view data-id="{{index}}" catchtap="itemClick" class="noteItem">
+				<view class="noteList">
+					<view class="userInfo">
+						<image class="userPic" src="{{item.userPic}}" mode="cover"></image>
+						<text  class="userName">{{item.userName}}</text>
+						<text  class="createTime">{{item.createTime}}</text>
+					</view>
+					<view class="noteContent">{{item.content}}</view>
+					<view hidden="{{!item.address}}" class="position1" catchtap="toPositionView" data-lat="{{item.latitude}}" data-lon="{{item.longitude}}">
+						<image src="/images/position1.png"></image>
+						<text>{{item.address}}</text>
+					</view>
+				</view>
+				<view class="noteBottom">
+					<image class="transmit" src="/images/transmit.png"></image>
+					<image class="praise" src="{{item.flag? '/images/praise1.png':'/images/praise.png'}}" data-type="praise" data-id="{{item.starId}}" mode="cover"></image>
+					<text class="praiseNum">{{item.praiseNum == 0? '':item.praiseNum}}</text>
+					<button class="transmit_btn" plain="true" open-type="share"  data-id="{{item._id}}"></button>
+					<image class="deleteNote" src="/images/delete.png" data-type="delete"></image>
+				</view>
+			</view>
+		</block>
+	</scroll-view>
+</view>

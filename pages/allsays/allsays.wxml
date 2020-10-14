@@ -1,0 +1,90 @@
+<!--pages/allsays/allsays.wxml-->
+<import src='/pages/template/template' />
+<view class="allsaysPage">
+
+	<!--Tab布局-->
+	<view class="{{version==1||version==undefined?'title1':'title'}}">
+		<view class="{{0 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='0'>
+			<text>全部</text>
+			<hr class="line-style" />
+		</view>
+
+		<view class="{{1 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='1'>
+			<text>正能量</text>
+			<hr class="line-style" />
+		</view>
+		<view class="{{2 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='2'>
+			<text>搞笑</text>
+			<hr class="line-style" />
+		</view>
+		<view class="{{3 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='3'>
+			<text>情感</text>
+			<hr class="line-style" />
+		</view>
+	</view>
+
+	<!--内容布局-->
+	<swiper class='swiper' bindchange='pagechange' current='{{currentIndex}}'>
+		<swiper-item class='swiper_item'>
+			<scroll-view scroll-y  refresher-enabled refresher-triggered="{{state}}" bindrefresherrefresh="pullDownRefresh" bindscrolltolower="lower">
+				<block wx:for="{{datas}}" wx:key="{{index}}">
+					<view data-id="{{index}}" catchtap="itemClick" class="noteItem">
+						<template is="noteListTemplate" data="{{...item}}"></template>
+					</view>
+				</block>
+				<view class="loadMore" hidden="{{isHidenLoadMore}}">
+            <view class="weui-loading"></view>
+						<text>加载中</text>
+        </view>
+			</scroll-view>
+		</swiper-item>
+
+		<swiper-item class='swiper_item'>
+			<scroll-view scroll-y  refresher-enabled refresher-triggered="{{state}}" bindrefresherrefresh="pullDownRefresh" bindscrolltolower="lower">
+				<block wx:for="{{datas1}}" wx:key="{{index}}">
+					<view data-id="{{index}}" catchtap="itemClick" class="noteItem">
+						<template is="noteListTemplate" data="{{...item}}"></template>
+					</view>
+				</block>
+				<view class="loadMore" hidden="{{isHidenLoadMore}}">
+            <view class="weui-loading"></view>
+						<text>加载中</text>
+        </view>
+			</scroll-view>
+		</swiper-item>
+
+		<swiper-item class='swiper_item'>
+			<scroll-view scroll-y  refresher-enabled refresher-triggered="{{state}}" bindrefresherrefresh="pullDownRefresh" bindscrolltolower="lower">
+				<block wx:for="{{datas2}}" wx:key="{{index}}">
+					<view data-id="{{index}}" catchtap="itemClick" class="noteItem">
+						<template is="noteListTemplate" data="{{...item}}"></template>
+					</view>
+				</block>
+				<view class="loadMore" hidden="{{isHidenLoadMore}}">
+            <view class="weui-loading"></view>
+						<text>加载中</text>
+        </view>
+			</scroll-view>
+		</swiper-item>
+
+		<swiper-item class='swiper_item'>
+			<scroll-view scroll-y  refresher-enabled refresher-triggered="{{state}}" bindrefresherrefresh="pullDownRefresh" bindscrolltolower="lower">
+				<block wx:for="{{datas3}}" wx:key="{{index}}">
+					<view data-id="{{index}}" catchtap="itemClick" class="noteItem">
+						<template is="noteListTemplate" data="{{...item}}"></template>
+					</view>
+				</block>
+				<view class="loadMore" hidden="{{isHidenLoadMore}}">
+            <view class="weui-loading"></view>
+						<text>加载中</text>
+        </view>
+			</scroll-view>
+		</swiper-item>
+	</swiper>
+
+
+</view>
+
+<view class="{{version==1||version==undefined?'hiddenSays':'addSays'}}" catchtap="tosaysAdd" hover-class="addSays-hover">
+	<image src="/images/add.png"></image>
+</view>

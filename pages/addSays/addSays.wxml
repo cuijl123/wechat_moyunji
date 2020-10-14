@@ -1,0 +1,46 @@
+<!--pages/addSays/addSays.wxml-->
+<view class="addSays" hidden="{{version==1||version==undefined?true:false}}">
+	<form catchsubmit="formSubmit">
+		<view class="section">
+			<textarea placeholder="{{placeholder}}" name="content" auto-focus maxlength="100" />
+		  
+   </view>
+   <checkbox-group name="class" class="checkList">
+        <label class="checkbox">
+          <checkbox value="energy"/>正能量
+        </label>
+        <label class="checkbox">
+          <checkbox value="laugh"/>搞笑
+        </label>
+        <label class="checkbox">
+          <checkbox value="emotion"/>情感
+        </label>
+      </checkbox-group>
+    <view hidden="{{address}}" class="position" catchtap="toPosition">
+    <image src="{{address?'/images/position1.png':'/images/position.png'}}"></image>
+    <text>{{address? address:"你在哪里？"}}</text>
+    </view>
+    <view hidden="{{!address}}" class="position1" catchtap="toPosition">
+    <image src="{{address?'/images/position1.png':'/images/position.png'}}"></image>
+    <text>{{address}}</text>
+    <image src="/images/remove.png" catchtap="removePosition"></image>
+    </view>  
+   <button formType="submit" type="default" size="default" class="save-btn">发布</button>
+ </form>
+</view>
+
+
+<view hidden="{{version==1||version==undefined?false:true}}">
+<view class="noteList">
+  <view class="userInfo">
+  <image class="userPic" src="https://wx.qlogo.cn/mmopen/vi_32/60GYa8icicicYdia9V03wZTkzBWMIxuNN8sVM9QianPic2WPLHBicryWz6pNVxDMv8UrRSpRIT51oXeOBeibnbspLic9vMQ/132" mode="cover"></image>
+  <text  class="userName">王大锤</text>
+  <text  class="createTime">2020/08/10 14:25:35</text>
+  </view>
+  <view class="noteContent">生活不止眼前的苟且，还有诗和远方的田野!</view>
+</view>
+ <view class="noteBottom">
+  <image class="transmit" src="/images/transmit.png"></image>
+  <image class="praise" src="/images/praise.png" ></image>
+  </view>
+</view>

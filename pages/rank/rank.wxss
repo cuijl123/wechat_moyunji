@@ -1,0 +1,77 @@
+/* pages/rank/rank.wxss */
+@import '/pages/template/template.wxss';
+page{
+  width:100%;
+  height: 100%;
+  background-color: rgb(247, 247, 247);
+}
+.allsaysPage{
+  height: 100%
+}
+.allsaysPage > view{
+  margin-bottom: 30rpx;
+}
+.addSays {
+  position:fixed;
+  top:20rpx;
+  right:5rpx
+  }
+.addSays image {
+  width:80rpx;
+  height:80rpx;
+  }
+.addSays-hover{
+  width:100rpx;
+  height:100rpx;
+}
+.noteItem{
+  margin-bottom: 30rpx;
+
+}
+
+
+scroll-view {
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: calc(100% - 90rpx);
+  flex: 1;
+  overflow: scroll;
+  margin: 0 auto;
+}
+
+.record-item {
+  margin-top: 10rpx;
+  background-color: white;
+  padding-bottom: 5rpx;
+  padding-top: 5rpx;
+  font-size: 30rpx;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #eee;
+  padding: 2vh;
+  border-radius: 10rpx
+}
+
+
+.loadMore {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20rpx;
+}
+
+.loadMore>text {
+  font-size: 32rpx;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+  color: transparent;
+}

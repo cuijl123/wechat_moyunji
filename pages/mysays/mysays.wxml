@@ -1,0 +1,30 @@
+<!--pages/mysays/mysays.wxml-->
+<view class="maysays">
+	<view class="header">
+		<image class="userPic" src="{{userPic?userPic:'/images/userPic.png'}}"></image>
+		<text class="userName" hidden="{{!userName}}">{{userName}}</text>
+		<button class="login" hidden="{{userName}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录</button>
+	</view>
+	<view class="contentHeader" hidden="{{version==1||version==undefined?true:false}}">
+		<view class="tab_item" catchtap="tomyPublish">
+			<view class="item_icon">
+				<image src="/images/my_publish1.png"></image>
+				<text>我的({{noteNum}})</text>
+			</view>
+			
+		</view>
+		<view class="tab_item" catchtap="tomyPraise">
+			<view class="item_icon">
+				<image src="/images/my_praise.png"></image>
+				<text>赞过({{praisenum}})</text>
+			</view>
+			
+		</view>
+	</view>
+	<view class="contentItem" catchtap="tomyPraise" hidden="{{version==1||version==undefined?false:true}}">
+		<image src="/images/my_praise.png"></image>
+				<text>我赞过的</text>
+				<text>{{praisenum}}</text>
+				<text>></text>
+	</view>
+</view>

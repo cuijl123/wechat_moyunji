@@ -1,0 +1,112 @@
+/* pages/mysays/mysays.wxss */
+page {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(247, 247, 247);
+}
+
+.header {
+  height: 220rpx;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid rgb(238, 237, 237);
+}
+
+.header::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.userPic {
+  width: 120rpx;
+  height: 120rpx;
+  margin-left: 50rpx;
+  border-radius: 15%;
+  vertical-align: middle;
+}
+
+.userName {
+  vertical-align: middle;
+  margin-left: 30rpx;
+}
+
+.login {
+  display: inline-block;
+  vertical-align: middle;
+background-color: #07c160;
+color: #fff;
+padding: 10rpx 15rpx;
+border-radius: 10rpx;
+font-size: 32rpx;
+width: 100rpx !important;
+margin-left: 30rpx !important;
+
+
+}
+
+.contentHeader {
+  display: flex;
+  width: 95%;
+  height: 250rpx;
+  margin: 30rpx auto;
+  border-radius: 10rpx;
+  background-color: white;
+
+
+}
+
+.contentHeader>view {
+  width: 50%;
+}
+
+.contentHeader>view:nth-child(1) {
+  border-right: 1px solid rgb(235, 232, 232);
+}
+
+.contentHeader>view image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.tab_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item_icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.item_icon text {
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+.contentItem{
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-top: 30rpx;
+}
+.contentItem image:nth-child(1){
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 10rpx;
+}
+.contentItem text:nth-child(3){
+  position: absolute;
+  right: 80rpx;
+}
+.contentItem text:nth-child(4){
+  position: absolute;
+  right: 20rpx;
+  font-size: 50rpx;
+  color: grey;
+}

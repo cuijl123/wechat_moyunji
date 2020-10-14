@@ -1,0 +1,21 @@
+<!--pages/template/template.wxml-->
+<template name="noteListTemplate">
+<view class="noteList">
+  <view class="userInfo">
+  <image class="userPic" src="{{userPic}}" mode="cover"></image>
+  <text  class="userName">{{userName}}</text>
+  <text  class="createTime">{{createTime}}</text>
+  </view>
+  <view class="noteContent">{{content}}</view>
+  <view hidden="{{!address}}" class="position1" catchtap="toPositionView" data-lat="{{latitude}}" data-lon="{{longitude}}">
+    <image src="/images/position1.png"></image>
+    <text>{{address}}</text>
+    </view>
+</view>
+ <view class="noteBottom">
+  <image class="transmit" src="/images/transmit.png"></image>
+  <image class="praise" src="{{flag? '/images/praise1.png':'/images/praise.png'}}"  data-type="praise" data-id="{{starId}}"  mode="cover"></image>
+  <text class="praiseNum">{{praiseNum == 0? '':praiseNum}}</text>
+  <button class="transmit_btn" plain="true" open-type="share" data-id="{{_id}}"></button>
+  </view>
+</template>
